@@ -2,6 +2,8 @@
 
 (require :shtml)
 (require :markdown)
+(require :markdown-tools)
+(require :os-utils)
 
 (define *ga-code* "<script type=\"text/javascript\">
   var _gaq = _gaq || [];
@@ -32,7 +34,7 @@
            (:div :class "fill"
                  (:div :class "container"
                        (:a :class "brand" 
-                           :href "/" 
+                           :href "./" 
                            "dfsch")
                        (:ul :class "nav"
                             ,@(map (lambda (entry)
@@ -69,7 +71,7 @@
                             "Bootstrap from Twitter")))))))
 
 (define *menu* '(("./features.html" "Features")
-                 ("./download.html" "Downloads")
+                 ("./downloads.html" "Downloads")
                  ("./documentation.html" "Documentation")
                  ("http://github.com/adh/dfsch" "Github")))
 
@@ -80,11 +82,32 @@
 (define (read-markdown filename)
   (with-open-file f (filename "r")
                   `((:literal-output 
-                     ,(markdown:markdown (port-read-whole filename))))))
+                     ,(markdown:markdown (port-read-whole f))))))
 
-(shtml:emit-file (base-template "dfsch - a pragmatic Scheme" *menu* "./"
+(shtml:emit-file (base-template "dfsch - a pragmatic Scheme" 
+                                *menu* 
+                                "./"
                                 (read-fragment "input/hero.html"))
                  "./index.html")
 
-(shtml:emit-file (content-template "Home" *menu* "./" 
-                                   '((:h1 "Foo"))) "./foo.html")
+(define (process-markdown-file basename)
+  (shtml:emit-file 
+   (content-template (string-append "dfsch - "
+                                    (markdown-tools:get-file-title
+                                     (string-append "input/" basename ".md")))
+                     *menu* 
+                     (string-append "./" basename ".html") 
+                     (read-markdown (string-append "input/" basename ".md"))) 
+   (string-append "./" basename ".html")))
+
+
+(for-each (lambda (filename)
+            (process-markdown-file (substring filename 0 -4)))
+          (os-utils:directory->list "input" 
+                                    :filter (lambda (fn)
+                                              (and (> (seq-length fn)
+                                                      4)
+                                                   (equal? (substring fn -4)
+                                                           ".md")))))
+
+  
