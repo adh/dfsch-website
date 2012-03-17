@@ -83,7 +83,7 @@
                      ,(markdown:markdown (port-read-whole filename))))))
 
 (shtml:emit-file (base-template "dfsch - a pragmatic Scheme" *menu* "./"
-                                (read-fragment "./hero.html"))
+                                (read-fragment "input/hero.html"))
                  "./index.html")
 
 (shtml:emit-file (content-template "Home" *menu* "./" 
