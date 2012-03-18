@@ -113,7 +113,7 @@
 (define (build-file-menu path)
   `(:ul
     ,@(map (lambda (fn) 
-             `(:li (:a :href ,(string-append path fn)
+             `(:li (:a :href ,(string-append path "/" fn)
                        ,fn)))
            (sort-list (os-utils:directory->list path
                                                 :filter (lambda (fn) 
