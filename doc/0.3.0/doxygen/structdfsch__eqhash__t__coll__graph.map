@@ -1,0 +1,7 @@
+<area shape="rect" href="$structdfsch____eqhash__small__t.html" title="{dfsch__eqhash_small_t\n|+ flags\l+ keys\l+ values\l|}" alt="" coords="5,457,173,575">
+<area shape="rect" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="319,7,431,89">
+<area shape="rect" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ name\l+ size\l+ slots\l+ superclass\l+ type\l+ write\l|}" alt="" coords="367,175,500,431">
+<area shape="rect" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ ref\l+ set\l+ size\l+ standard_type\l|}" alt="" coords="488,600,619,736">
+<area shape="rect" href="$structdfsch__eqhash__entry__t.html" title="{dfsch_eqhash_entry_t\n|+ flags\l+ key\l+ next\l+ value\l|}" alt="" coords="131,235,291,371">
+<area shape="rect" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ type\l|}" alt="" coords="408,804,541,956">
+<area shape="rect" href="$structdfsch____eqhash__large__t.html" title="{dfsch__eqhash_large_t\n|+ cache\l+ count\l+ mask\l+ vector\l|}" alt="" coords="136,600,304,736">

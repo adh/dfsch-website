@@ -1,0 +1,17 @@
+<area shape="rect" href="$parse_8h.html" title="dfsch/parse.h" alt="" coords="372,84,479,111">
+<area shape="rect" href="$console_8c.html" title="lib/console.c" alt="" coords="5,239,104,265">
+<area shape="rect" href="$ports_8c.html" title="src/ports.c" alt="" coords="588,161,676,188">
+<area shape="rect" href="$repl_8c.html" title="src/repl.c" alt="" coords="700,161,780,188">
+<area shape="rect" href="$dfsch_2lib_2process_8h.html" title="dfsch/lib/process.h" alt="" coords="784,84,923,111">
+<area shape="rect" href="$sxml_8c.html" title="lib/sxml.c" alt="" coords="947,84,1027,111">
+<area shape="rect" href="$xml_8c.html" title="lib/xml.c" alt="" coords="1051,84,1123,111">
+<area shape="rect" href="$console_8h.html" title="dfsch/lib/console.h" alt="" coords="425,161,564,188">
+<area shape="rect" href="$dfsch_8c.html" title="src/dfsch.c" alt="" coords="92,161,180,188">
+<area shape="rect" href="$load_8c.html" title="src/load.c" alt="" coords="204,161,287,188">
+<area shape="rect" href="$parse_8c.html" title="src/parse.c" alt="" coords="311,161,401,188">
+<area shape="rect" href="$cdebug_8c.html" title="lib/cdebug.c" alt="" coords="516,239,612,265">
+<area shape="rect" href="$console__mod_8c.html" title="lib/console_mod.c" alt="" coords="356,239,492,265">
+<area shape="rect" href="$process_8c.html" title="lib/process.c" alt="" coords="804,161,903,188">
+<area shape="rect" href="$lib_2process_8h.html" title="lib/process.h" alt="" coords="927,161,1028,188">
+<area shape="rect" href="$process__mod_8c.html" title="lib/process_mod.c" alt="" coords="1052,161,1188,188">
+<area shape="rect" href="$process__mod_8h.html" title="lib/process_mod.h" alt="" coords="1212,161,1348,188">

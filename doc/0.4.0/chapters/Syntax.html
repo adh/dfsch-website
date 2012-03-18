@@ -1,0 +1,181 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Syntax - Default dfsch top-level environment</title><style>
+.menu-bar {
+  display: block; 
+  background-color: #abcdef; 
+  border-width: 1px; 
+  border-color: black; 
+  border-style: solid;
+  padding-left: 1em
+}
+.menu-bar li {
+  display: inline; 
+  margin-left: 0.5em; 
+  margin-right: 0.5em
+}
+
+.pkg-menu {
+  display: block;
+  float: right;
+}
+.pkg-label {
+  display: none;
+}
+.char-bar {
+  display: block; 
+  border-width: 1px; 
+  border-color: #abcdef; 
+  border-style: solid;
+  padding-left: 0.2em
+}
+.char-bar li {
+  display: inline; 
+  margin-left: 0.3em; 
+  margin-right: 0.3em
+}
+
+.chapter-list {
+  margin-top: 0em;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+  background-color: #cdabef;
+  border-width: 1px; 
+  border-color: black; 
+  border-style: solid;
+  float: right;
+}
+
+pre {
+  border-color: #abcdef;
+  border-style: dashed;
+  border-width: 1px;
+  border-left-style: solid;
+  border-left-width: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+</style></head><body><h1>Syntax</h1><ul class="menu-bar"><li><a href="../index.html">All</a></li><li><a href="../hierarchy.html">Type hierarchy</a></li><li><a href="../categories/Functions.html">Functions</a></li><li><a href="../categories/Generic-functions.html">Generic functions</a></li><li><a href="../categories/Macros.html">Macros</a></li><li><a href="../categories/Special-forms.html">Special forms</a></li><li><a href="../categories/Type-specializers.html">Type specializers</a></li><li><a href="../categories/Types.html">Types</a></li><li><a href="../categories/uncategorized.html">uncategorized</a></li><li><strong class="pkg-label">Packages:</strong><ul class="pkg-menu"><li class="pkg-nav"><a href="../packages/dfsch.html">dfsch</a></li><li class="pkg-nav"><a href="../packages/dfsch_25implementation.html">dfsch%implementation</a></li><li class="pkg-nav"><a href="../packages/dfsch_25internal.html">dfsch%internal</a></li></ul></li></ul><ul class="chapter-list"><li><strong>Syntax</strong></li><li><a href="./Program-structure.html">Program structure</a></li><li><a href="./Collections_2c-sequences-and-mappings.html">Collections, sequences and mappings</a></li><li><a href="./Strings.html">Strings</a></li><li><a href="./Numbers.html">Numbers</a></li><li><a href="./Input-and-output.html">Input and output</a></li><li><a href="./Types-and-object-orientation.html">Types and object orientation</a></li></ul><p>As dfsch is one of many dislects of Lisp, it uses parenthesis based
+syntax. Source code read from text files on disk is converted into
+in-memory representation consisting of lists and other normal user
+accessible objects. Runtime behavior of programs does not directly
+depend on program source code, but on this in memory representation
+and will be therefore described in that terms in following
+chapters. This chapter describes rules used in construction of this in
+memory structures when reading source code as well as syntax of
+literal data.</p>
+
+<p>Source code essentially describes tree of in memory objects. Some of
+these objects can contain references to other objects, other are only
+atomic values.</p>
+
+<h2>Numbers</h2>
+
+<p>Numbers are by default written in decimal, this can be changed by
+C-like prefixes "0" and "0x". For example:</p>
+
+<pre><code>]=&gt; 10
+10
+]=&gt; 010
+8
+]=&gt; 0x10
+16
+</code></pre>
+
+<p>Fractions can be written as two integers separated by slash</p>
+
+<pre><code>]=&gt; 2/4
+1/2
+</code></pre>
+
+<p>Base of integer and fractions can also be changed by these prefixes:</p>
+
+<ul>
+<li>#b - Binary</li>
+<li>#o - Octal</li>
+<li>#x - Hexadecimal</li>
+<li>#<base>r - Arbitrary base (2 &lt;= base &lt;= 36)</li>
+</ul>
+
+<p>Floating point numbers must be written with decimal point and may use
+E-notation.</p>
+
+<pre><code>]=&gt; 3.25
+3.25
+]=&gt; 1.e6
+1000000
+</code></pre>
+
+<h2>Symbols</h2>
+
+<p>Any space delimited string that does not conform to syntax of numbers
+is parsed as so called symbol (<!DOCTYPE html><a href="../entries/_3csymbol_3e.html">&lt;symbol&gt;</a>). Symbols are unique named objects that
+are used as names. Most notably, symbols name variables.</p>
+
+<p>Each symbol belong into so called package (<package>). Part of symbol
+representation up to first colon names package of that symbol. When
+symbol name begins with colon, it's so called keyword (symbol in
+package named keyword), which is special case of symbols. When package
+name is absent from symbol name, so called current package and
+packages used by it are searched for symbol with that name and finally
+if no such symbol exists, it's created in current package.</p>
+
+<p>For example, these are valid symbols:</p>
+
+<pre><code>foo
+with-open-file
+1+
+dfsch%implementation:%loop
+:has-argument?
+&amp;optional
+</code></pre>
+
+<h2>Strings</h2>
+
+<p>Strings (<!DOCTYPE html><a href="../entries/_3cstring_3e.html">&lt;string&gt;</a>) are delimited by double quotes. Backlash can be used to escape
+quote characters insode string, as well as for some C-style escape
+sequences. String literals can contain any characters including
+newlines and other control characters. All strings are UTF-8 encoded
+and immutable.</p>
+
+<pre><code>"this is a string"
+"this: \"is also a string\""
+</code></pre>
+
+<p>String literal prefixed with # encodes so called
+byte-vector (<!DOCTYPE html><a href="../entries/_3cbyte-vector_3e.html">&lt;byte-vector&gt;</a>). Bytevectors are like strings, but consist of bytes and
+not characters and can be modified.</p>
+
+<h2>Lists</h2>
+
+<p>List (<!DOCTYPE html><a href="../entries/_3clist_3e.html">&lt;list&gt;</a>) is one of most important objects in dfsch source code. It's
+representation consists of multiple objects separated by spaces inside
+parenthesis. For example:</p>
+
+<pre><code>(1 2 3)
+(define pi 3.141592)
+(+ 3 4 (* 5 6))
+((:a 1) (:b 2) (:c 3))
+</code></pre>
+
+<p>Internally, lists are construed from so called pairs that are linked
+together by their second element (<!DOCTYPE html><a href="../entries/cdr.html">cdr</a>). Pairs can be directly
+written as two objects in parenthesis separated by single dot:</p>
+
+<pre><code>( car . cdr )
+</code></pre>
+
+<h2>Vectors</h2>
+
+<p>While vectors (<!DOCTYPE html><a href="../entries/_3cvector_3e.html">&lt;vector&gt;</a>) are syntactically similar to lists, they are very
+different kind of object. Vectors are arrays of objects references,
+because of that, they can be accessed in constant time, but cannot be
+resized once created. They are represented by parenthesised list of
+objects prefixed by #.</p>
+
+<pre><code>#(1 2 3)
+#(2 (foo) 4 5)
+</code></pre>
+
+<p>In contrast to Scheme, vectors in dfsch are self-evaluating atomic
+objects and thus valid when present unquoted in program source.</p>
+<hr><p><address>Generated by docgen.scm running on dfsch 0.4.0-rc1 (rel-0.3.0-1334-ge2409e4) on 2012-03-18 18:35:21</address></p></body></html>

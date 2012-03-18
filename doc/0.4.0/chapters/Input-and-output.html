@@ -1,0 +1,139 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Input and output - Default dfsch top-level environment</title><style>
+.menu-bar {
+  display: block; 
+  background-color: #abcdef; 
+  border-width: 1px; 
+  border-color: black; 
+  border-style: solid;
+  padding-left: 1em
+}
+.menu-bar li {
+  display: inline; 
+  margin-left: 0.5em; 
+  margin-right: 0.5em
+}
+
+.pkg-menu {
+  display: block;
+  float: right;
+}
+.pkg-label {
+  display: none;
+}
+.char-bar {
+  display: block; 
+  border-width: 1px; 
+  border-color: #abcdef; 
+  border-style: solid;
+  padding-left: 0.2em
+}
+.char-bar li {
+  display: inline; 
+  margin-left: 0.3em; 
+  margin-right: 0.3em
+}
+
+.chapter-list {
+  margin-top: 0em;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+  background-color: #cdabef;
+  border-width: 1px; 
+  border-color: black; 
+  border-style: solid;
+  float: right;
+}
+
+pre {
+  border-color: #abcdef;
+  border-style: dashed;
+  border-width: 1px;
+  border-left-style: solid;
+  border-left-width: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+</style></head><body><h1>Input and output</h1><ul class="menu-bar"><li><a href="../index.html">All</a></li><li><a href="../hierarchy.html">Type hierarchy</a></li><li><a href="../categories/Functions.html">Functions</a></li><li><a href="../categories/Generic-functions.html">Generic functions</a></li><li><a href="../categories/Macros.html">Macros</a></li><li><a href="../categories/Special-forms.html">Special forms</a></li><li><a href="../categories/Type-specializers.html">Type specializers</a></li><li><a href="../categories/Types.html">Types</a></li><li><a href="../categories/uncategorized.html">uncategorized</a></li><li><strong class="pkg-label">Packages:</strong><ul class="pkg-menu"><li class="pkg-nav"><a href="../packages/dfsch.html">dfsch</a></li><li class="pkg-nav"><a href="../packages/dfsch_25implementation.html">dfsch%implementation</a></li><li class="pkg-nav"><a href="../packages/dfsch_25internal.html">dfsch%internal</a></li></ul></li></ul><ul class="chapter-list"><li><a href="./Syntax.html">Syntax</a></li><li><a href="./Program-structure.html">Program structure</a></li><li><a href="./Collections_2c-sequences-and-mappings.html">Collections, sequences and mappings</a></li><li><a href="./Strings.html">Strings</a></li><li><a href="./Numbers.html">Numbers</a></li><li><strong>Input and output</strong></li><li><a href="./Types-and-object-orientation.html">Types and object orientation</a></li></ul><p>Access to file-like objects is faciliated by using so called
+ports. Core library supports on disk files and in-memory buffers, C
+extensions can implement another types of ports. Extensions bundled
+with dfsch allow you to additionally access:</p>
+
+<ul>
+<li><a href="../modules/process/index.html">process</a> - External processes</li>
+<li><a href="../modules/socket-port/index.html">socket-port</a> - Network sockets</li>
+<li><a href="../modules/zlib/index.html">zlib</a> - GZip compressed files</li>
+</ul>
+
+<p>Port for accessing on disk files can be opened by <!DOCTYPE html><a href="../entries/open-file-port.html">open-file-port</a>,
+such port should be closed by <!DOCTYPE html><a href="../entries/close-file-port_21.html">close-file-port!</a> once it is not needed
+anymore, althought it will be closed automatically by garbage
+collector.</p>
+
+<p>Function <!DOCTYPE html><a href="../entries/string-input-port.html">string-input-port</a> produces read-only port containing
+supplied string and <!DOCTYPE html><a href="../entries/string-output-port.html">string-output-port</a> produces write-only port that
+collects data written to it into string (accessed by
+<!DOCTYPE html><a href="../entries/string-output-port-value.html">string-output-port-value</a>). Function <!DOCTYPE html><a href="../entries/null-port.html">null-port</a> returns port that
+reads as empty and cannot be written into.</p>
+
+<p>Global constants <!DOCTYPE html><a href="../entries/_2astandard-input-port_2a.html">*standard-input-port*</a>, <!DOCTYPE html><a href="../entries/_2astandard-output-port_2a.html">*standard-output-port*</a>
+and <!DOCTYPE html><a href="../entries/_2astandard-error-port_2a.html">*standard-error-port*</a> represent respective streams provided by
+operating system. Most functions operating on ports do not require
+explicit port argument and can use implicit ports which can be
+examined by <!DOCTYPE html><a href="../entries/current-input-port.html">current-input-port</a> and <!DOCTYPE html><a href="../entries/current-output-port.html">current-output-port</a> and changed
+by <!DOCTYPE html><a href="../entries/set-current-input-port_21.html">set-current-input-port!</a> and <!DOCTYPE html><a href="../entries/set-current-output-port_21.html">set-current-output-port!</a>
+(<!DOCTYPE html><a href="../entries/current-error-port.html">current-error-port</a> is also supported for completenes, but not used
+by any functions in core library).</p>
+
+<p>Ports can be accessed on line/byte level by following functions:</p>
+
+<ul>
+<li><!DOCTYPE html><a href="../entries/port-write-buf.html">port-write-buf</a></li>
+<li><!DOCTYPE html><a href="../entries/port-read-buf.html">port-read-buf</a></li>
+<li><!DOCTYPE html><a href="../entries/port-read-whole.html">port-read-whole</a></li>
+<li><!DOCTYPE html><a href="../entries/port-seek_21.html">port-seek!</a></li>
+<li><!DOCTYPE html><a href="../entries/port-tell.html">port-tell</a></li>
+<li><!DOCTYPE html><a href="../entries/newline.html">newline</a></li>
+</ul>
+
+<p>Also, objects can be written in human readable format and read back.</p>
+
+<ul>
+<li><!DOCTYPE html><a href="../entries/display.html">display</a> - writes objects in human-readable format</li>
+<li><!DOCTYPE html><a href="../entries/read.html">read</a> - reads objects written out by <!DOCTYPE html><a href="../entries/write.html">write</a> (or in general dfsch
+source code)</li>
+<li><!DOCTYPE html><a href="../entries/write.html">write</a> - writes objects in machine-readable format</li>
+</ul>
+
+<h2>Serialization</h2>
+
+<p>In addition to file-based IO facilities, dfsch's core library provides
+support for serialization of almost arbitrary object graphs into
+portable and hopefuly compact binary format.</p>
+
+<p>Functions <!DOCTYPE html><a href="../entries/serialize.html">serialize</a> and <!DOCTYPE html><a href="../entries/deserialize.html">deserialize</a> provide high level access to
+serialization mechanism and convert objects into byte-vectors and vice
+versa. Following functions offer more control over serialization:</p>
+
+<ul>
+<li><!DOCTYPE html><a href="../entries/make-serializer.html">make-serializer</a></li>
+<li><!DOCTYPE html><a href="../entries/serializer-set-canonical-environment_21.html">serializer-set-canonical-environment!</a></li>
+<li><!DOCTYPE html><a href="../entries/serializer-write-stream-header_21.html">serializer-write-stream-header!</a></li>
+<li><!DOCTYPE html><a href="../entries/serialize-object_21.html">serialize-object!</a></li>
+<li><!DOCTYPE html><a href="../entries/serialize-bytes_21.html">serialize-bytes!</a></li>
+<li><!DOCTYPE html><a href="../entries/serialize-stream-symbol_21.html">serialize-stream-symbol!</a></li>
+<li><!DOCTYPE html><a href="../entries/serialize-integer_21.html">serialize-integer!</a></li>
+</ul>
+
+<p>And deserialization:</p>
+
+<ul>
+<li><!DOCTYPE html><a href="../entries/make-deserializer.html">make-deserializer</a></li>
+<li><!DOCTYPE html><a href="../entries/deserializer-set-canonical-environment_21.html">deserializer-set-canonical-environment!</a></li>
+<li><!DOCTYPE html><a href="../entries/deserializer-read-stream-header_21.html">deserializer-read-stream-header!</a></li>
+<li><!DOCTYPE html><a href="../entries/deserialize-object_21.html">deserialize-object!</a></li>
+<li><!DOCTYPE html><a href="../entries/deserialize-bytes_21.html">deserialize-bytes!</a></li>
+<li><!DOCTYPE html><a href="../entries/deserialize-stream-symbol_21.html">deserialize-stream-symbol!</a></li>
+<li><!DOCTYPE html><a href="../entries/deserialize-integer_21.html">deserialize-integer!</a></li>
+</ul>
+<hr><p><address>Generated by docgen.scm running on dfsch 0.4.0-rc1 (rel-0.3.0-1334-ge2409e4) on 2012-03-18 18:35:21</address></p></body></html>

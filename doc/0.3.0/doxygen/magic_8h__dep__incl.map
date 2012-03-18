@@ -1,0 +1,12 @@
+<area shape="rect" href="$console_8c.html" title="lib/console.c" alt="" coords="5,84,104,111">
+<area shape="rect" href="$sxml_8c.html" title="lib/sxml.c" alt="" coords="128,84,208,111">
+<area shape="rect" href="$xml_8c.html" title="lib/xml.c" alt="" coords="232,84,304,111">
+<area shape="rect" href="$conditions_8c.html" title="src/conditions.c" alt="" coords="328,84,448,111">
+<area shape="rect" href="$control_8c.html" title="src/control.c" alt="" coords="472,84,571,111">
+<area shape="rect" href="$dfsch_8c.html" title="src/dfsch.c" alt="" coords="529,161,617,188">
+<area shape="rect" href="$src_2types_8h.html" title="src/types.h" alt="" coords="645,84,736,111">
+<area shape="rect" href="$introspect_8c.html" title="src/introspect.c" alt="" coords="764,161,884,188">
+<area shape="rect" href="$parse_8c.html" title="src/parse.c" alt="" coords="811,84,901,111">
+<area shape="rect" href="$ports_8c.html" title="src/ports.c" alt="" coords="925,84,1013,111">
+<area shape="rect" href="$repl_8c.html" title="src/repl.c" alt="" coords="1037,84,1117,111">
+<area shape="rect" href="$strings_8c.html" title="src/strings.c" alt="" coords="641,161,740,188">

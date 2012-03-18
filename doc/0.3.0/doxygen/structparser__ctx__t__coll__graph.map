@@ -1,0 +1,6 @@
+<area shape="rect" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="223,7,335,89">
+<area shape="rect" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ name\l+ size\l+ slots\l+ superclass\l+ type\l+ write\l|}" alt="" coords="5,175,139,431">
+<area shape="rect" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ ref\l+ set\l+ size\l+ standard_type\l|}" alt="" coords="127,499,257,635">
+<area shape="rect" href="$structsxml__stack__t.html" title="{sxml_stack_t\n|+ head\l+ next\l+ tail\l|}" alt="" coords="388,244,492,361">
+<area shape="rect" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ type\l|}" alt="" coords="45,703,179,855">
+<area shape="rect" href="$structdfsch__sxml__parser__params__t.html" title="{dfsch_sxml_parser_params_t\n|+ collapse_whitespace\l+ encoding\l+ namespaces\l|}" alt="" coords="568,244,776,361">

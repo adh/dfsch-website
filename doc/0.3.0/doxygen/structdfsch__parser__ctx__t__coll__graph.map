@@ -1,0 +1,8 @@
+<area shape="rect" href="$structsymbol__map__t.html" title="{symbol_map_t\n|+ name\l+ next\l+ symbol\l|}" alt="" coords="761,263,876,380">
+<area shape="rect" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="332,7,444,89">
+<area shape="rect" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ name\l+ size\l+ slots\l+ superclass\l+ type\l+ write\l|}" alt="" coords="5,193,139,449">
+<area shape="rect" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ ref\l+ set\l+ size\l+ standard_type\l|}" alt="" coords="127,596,257,732">
+<area shape="rect" href="$structparser__stack__t.html" title="{parser_stack_t\n|+ front\l+ last\l+ next\l+ state\l+ tag\l|}" alt="" coords="952,245,1067,397">
+<area shape="rect" href="$structparser__directive__t.html" title="{parser_directive_t\n|+ baton\l+ directive\l+ next\l+ tag\l|}" alt="" coords="320,253,456,389">
+<area shape="rect" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ type\l|}" alt="" coords="45,879,179,1031">
+<area shape="rect" href="$structstring__queue__t.html" title="{string_queue_t\n|+ all\l+ buf\l|}" alt="" coords="532,271,647,372">

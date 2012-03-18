@@ -1,0 +1,15 @@
+<area shape="rect" href="$structlambda__list__t.html" title="{lambda_list_t\n|+ positional\l+ positional_count\l+ rest\l+ type\l|}" alt="" coords="43,773,181,909">
+<area shape="rect" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="684,7,796,89">
+<area shape="rect" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ name\l+ size\l+ slots\l+ superclass\l+ type\l+ write\l|}" alt="" coords="316,209,449,465">
+<area shape="rect" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ ref\l+ set\l+ size\l+ standard_type\l|}" alt="" coords="335,773,465,909">
+<area shape="rect" href="$structenvironment__t.html" title="{environment_t\n|+ decls\l+ owner\l+ parent\l+ type\l+ values\l|}" alt="" coords="843,1388,957,1540">
+<area shape="rect" href="$structdfsch____thread__info__t.html" title="{dfsch__thread_info_t\n|+ async_apply\l+ catch_list\l+ env_freelist\l+ handler_list\l+ pair_freelist\l+ restart_list\l+ throw_ret\l+ throw_tag\l+ throw_value\l+ trace_buffer\l+ trace_depth\l+ trace_listener\l+ trace_ptr\l|}" alt="" coords="824,1028,976,1319">
+<area shape="rect" href="$structdfsch____handler__list__t.html" title="{dfsch__handler_list_t\n|+ handler\l+ next\l+ type\l|}" alt="" coords="540,783,695,900">
+<area shape="rect" href="$structdfsch____tracepoint__t.html" title="{dfsch__tracepoint_t\n|+ anon\l+ apply\l+ args\l+ data\l+ data\l+ env\l+ eval\l+ expr\l+ flags\l+ location\l+ proc\l|}" alt="" coords="960,492,1107,748">
+<area shape="rect" href="$structdfsch____catch__list__t.html" title="{dfsch__catch_list_t\n|+ next\l+ tag\l|}" alt="" coords="1113,569,1255,671">
+<area shape="rect" href="$structdfsch____restart__list__t.html" title="{dfsch__restart_list_t\n|+ next\l+ restart\l|}" alt="" coords="643,569,792,671">
+<area shape="rect" href="$structdfsch____eqhash__small__t.html" title="{dfsch__eqhash_small_t\n|+ flags\l+ keys\l+ values\l|}" alt="" coords="1273,279,1441,396">
+<area shape="rect" href="$structdfsch__eqhash__entry__t.html" title="{dfsch_eqhash_entry_t\n|+ flags\l+ key\l+ next\l+ value\l|}" alt="" coords="1035,269,1195,405">
+<area shape="rect" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ type\l|}" alt="" coords="301,1097,435,1249">
+<area shape="rect" href="$structdfsch__eqhash__t.html" title="{dfsch_eqhash_t\n|+ contents\l+ is_large\l+ large\l+ small\l|}" alt="" coords="1205,1105,1325,1241">
+<area shape="rect" href="$structdfsch____eqhash__large__t.html" title="{dfsch__eqhash_large_t\n|+ cache\l+ count\l+ mask\l+ vector\l|}" alt="" coords="1181,773,1349,909">

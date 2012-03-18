@@ -1,0 +1,6 @@
+<area shape="rect" href="$structargument__t.html" title="{argument_t\n|+ baton\l+ callback\l+ flags\l+ next\l|}" alt="" coords="529,67,625,203">
+<area shape="rect" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ name\l+ size\l+ slots\l+ superclass\l+ type\l+ write\l|}" alt="" coords="108,7,241,263">
+<area shape="rect" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="131,357,243,440">
+<area shape="rect" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ ref\l+ set\l+ size\l+ standard_type\l|}" alt="" coords="112,533,243,669">
+<area shape="rect" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ type\l|}" alt="" coords="176,737,309,889">
+<area shape="rect" href="$structoption__t.html" title="{option_t\n|+ baton\l+ callback\l+ has_arg\l+ long_opt\l+ next\l+ short_opt\l|}" alt="" coords="357,49,453,220">
