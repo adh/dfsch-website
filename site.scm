@@ -70,7 +70,7 @@
                         (:a :href "http://twitter.github.com/bootstrap/"
                             "Bootstrap from Twitter")))))))
 
-(define *menu* '(("./features.html" "Features")
+(define *menu* '(;("./features.html" "Features")
                  ("./downloads.html" "Downloads")
                  ("./documentation.html" "Documentation")
                  ("http://github.com/adh/dfsch" "Github")))
@@ -110,4 +110,21 @@
                                                    (equal? (substring fn -4)
                                                            ".md")))))
 
+(define (build-file-menu path)
+  `(:ul
+    ,@(map (lambda (fn) 
+             `(:li (:a :href ,(string-append path fn)
+                       ,fn)))
+           (sort-list (os-utils:directory->list path
+                                                :filter (lambda (fn) 
+                                                          (not (equal? (seq-ref fn 0)
+                                                                       #\.))))
+                      string<?))))
+         
   
+(shtml:emit-file (content-template "dfsch - Downloads" 
+                                *menu* 
+                                "./downloads.html"
+                                `((:h1 "All downloads")
+                                  ,(build-file-menu "files")))
+                 "./files.html")
