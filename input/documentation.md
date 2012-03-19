@@ -10,6 +10,7 @@
 
  * [Language and standard library](snapshots/documentation/index.html)
  * [Modules](snapshots/documentation/modules/index.html)
+ * [C API](snapshots/documentation/doxygen/index.html)
 
 ## Older versions
 
