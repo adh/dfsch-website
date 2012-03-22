@@ -1,0 +1,26 @@
+var introspect_8h =
+[
+    [ "dfsch_breakpoint_hook_t", "introspect_8h.html#a419be99e8506206ff83cb2b63778dd32", null ],
+    [ "dfsch_function_entry_hook_t", "introspect_8h.html#a021416dfef1f84a6f99b8fa777a9c963", null ],
+    [ "dfsch_function_exit_hook_t", "introspect_8h.html#a2464a160019407a1f4db2367268f6133", null ],
+    [ "dfsch_add_breakpoint", "introspect_8h.html#a8ff119209fb3f25bc08bddca1dcd94bf", null ],
+    [ "dfsch_add_function_breakpoint", "introspect_8h.html#ab62a49cf403e709672391aadabbc0b5b", null ],
+    [ "dfsch_add_standard_breakpoint", "introspect_8h.html#ac614b03f07725d6c62f63ba36964499e", null ],
+    [ "dfsch_add_traced_function", "introspect_8h.html#a81be1830b21b4fb497620774707e54fc", null ],
+    [ "dfsch_clear_breakpoints", "introspect_8h.html#a986429452b3413deb93930440a3b9787", null ],
+    [ "dfsch_clear_traced_functions", "introspect_8h.html#a377c4c4f87e3f7819226e73998e680d3", null ],
+    [ "dfsch_describe_object", "introspect_8h.html#aba3213f00a32851211974e55028033f4", null ],
+    [ "dfsch_find_source_annotation", "introspect_8h.html#a788c2262a80c5b154f5717c040d0d66d", null ],
+    [ "dfsch_get_trace", "introspect_8h.html#a700249d362d951f622034fdfdc4da57e", null ],
+    [ "dfsch_have_trace_trap_p", "introspect_8h.html#a55b9fbfdd5ef4350c19df893c14b8fe6", null ],
+    [ "dfsch_inspect_object", "introspect_8h.html#aa91b36f4aa15d56cce042449f603d7b8", null ],
+    [ "dfsch_introspect_register", "introspect_8h.html#a17e0ad844cef74425aaec15a4ee353a7", null ],
+    [ "dfsch_prepare_single_step_breakpoint", "introspect_8h.html#abced57611e77ff6c93def292e5ed3d90", null ],
+    [ "dfsch_prepare_trace_trap", "introspect_8h.html#ac9ce1cb6fcbf925188da8a32c758fa91", null ],
+    [ "dfsch_print_trace_buffer", "introspect_8h.html#aa03f2d2a7e6bfab5b2e3554cfd20e4a2", null ],
+    [ "dfsch_remove_breakpoint", "introspect_8h.html#aac97579394531b49213302980b4fc009", null ],
+    [ "dfsch_remove_traced_function", "introspect_8h.html#acef1e6140d3b5547ced6924afc86600d", null ],
+    [ "dfsch_set_inspector", "introspect_8h.html#a5b3830086538436345952e3e957b4c28", null ],
+    [ "dfsch_sort_description_slots", "introspect_8h.html#a3349da2da38fbf96f17c1dd1df6e7fdd", null ],
+    [ "dfsch_trace_function", "introspect_8h.html#a439cabf01452fa7b23a1ef5ef4dc238e", null ]
+];

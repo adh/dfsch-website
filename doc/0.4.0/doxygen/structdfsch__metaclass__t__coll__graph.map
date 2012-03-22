@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="616,5,723,91"/>
+<area shape="rect" id="node4" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ collection\l+ describe\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ iterator\l+ mapping\l+ name\land 8 more...|}" alt="" coords="611,552,728,811"/>
+<area shape="rect" id="node7" href="$structdfsch__sequence__methods__t.html" title="{dfsch_sequence_methods_t\n|+ length\l+ ref\l+ set\l|}" alt="" coords="985,296,1169,416"/>
+<area shape="rect" id="node10" href="$structdfsch__mapping__methods__t.html" title="{dfsch_mapping_methods_t\n|+ get_keys_iterator\l+ get_values_iterator\l+ ref\l+ set\l+ set_if_exists\l+ set_if_not_exists\l+ unset\l|}" alt="" coords="175,261,353,451"/>
+<area shape="rect" id="node13" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ options\l+ slot_data\l+ type\l|}" alt="" coords="665,1149,783,1339"/>
+<area shape="rect" id="node16" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ alignment\l+ instance_init\l+ ref\l+ set\l+ size\l+ standard_type\l+ type_init\l|}" alt="" coords="551,893,676,1083"/>
+<area shape="rect" id="node20" href="$structdfsch__collection__methods__t.html" title="{dfsch_collection_methods_t\n|+ get_iterator\l+ make_constructor\l|}" alt="" coords="377,305,561,407"/>
+<area shape="rect" id="node24" href="$structdfsch__iterator__methods__t.html" title="{dfsch_iterator_methods_t\n|+ next\l+ this\l|}" alt="" coords="585,305,753,407"/>
+</map>

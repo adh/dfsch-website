@@ -1,0 +1,28 @@
+var cmdopts_8h =
+[
+    [ "DFSCH_CMDOPTS_ARGUMENT_MULTIPLE", "cmdopts_8h.html#a5b1b259eafb7fae29ae5de76f31cc56e", null ],
+    [ "DFSCH_CMDOPTS_ARGUMENT_REQUIRED", "cmdopts_8h.html#af1801be01e4872883af3142343c6bb2e", null ],
+    [ "DFSCH_CMDOPTS_ERROR_TYPE", "cmdopts_8h.html#a07970d32dd595c00908ee103941c227b", null ],
+    [ "DFSCH_CMDOPTS_PARSER_TYPE", "cmdopts_8h.html#a2df5e56504dd9d8ab8cd7d906096e61f", null ],
+    [ "DFSCH_CMDOPTS_STRICT_ORDER", "cmdopts_8h.html#aa78defd3661d58a065854ab65b1a82ee", null ],
+    [ "dfsch_cmdopts_callback_t", "cmdopts_8h.html#a58839d0a89392e82de04f9b87c75df52", null ],
+    [ "dfsch_cmdopts_source_t", "cmdopts_8h.html#a7e31973e6ca81b6202a22ded7f17a68b", null ],
+    [ "dfsch_cmdopts_t", "cmdopts_8h.html#a7037d547f9ea45ee6dc204f7a8e05db8", null ],
+    [ "dfsch_cmdopts_add_argument", "cmdopts_8h.html#a81827d83dcaef7e9c61e066ff0e423fd", null ],
+    [ "dfsch_cmdopts_add_double_argument", "cmdopts_8h.html#aa94e7d55a27fdc22e8a61342920504da", null ],
+    [ "dfsch_cmdopts_add_double_option", "cmdopts_8h.html#a2eb7754abe3f3f506c5db6b57ae5434e", null ],
+    [ "dfsch_cmdopts_add_flag_increment", "cmdopts_8h.html#a4e9e132ae3f50dd4262a101ecbbc674e", null ],
+    [ "dfsch_cmdopts_add_flag_set", "cmdopts_8h.html#af68ac3f4c89eec841b915fb6a44f9f4e", null ],
+    [ "dfsch_cmdopts_add_long_argument", "cmdopts_8h.html#a1b953e55537a4477ee66952da78f7208", null ],
+    [ "dfsch_cmdopts_add_long_option", "cmdopts_8h.html#a6492d5e557300cdf3a130b53a6dc666a", null ],
+    [ "dfsch_cmdopts_add_option", "cmdopts_8h.html#a34f416d42d8c89d54e8947533ba9614f", null ],
+    [ "dfsch_cmdopts_add_string_argument", "cmdopts_8h.html#acf8d3859dcb97c6b2ba70bb6239b1c2c", null ],
+    [ "dfsch_cmdopts_add_string_option", "cmdopts_8h.html#abdfd735fa739f639b6494cead015d31f", null ],
+    [ "dfsch_cmdopts_argv_to_list", "cmdopts_8h.html#ac864419e6f62e4d07552655fd56b735c", null ],
+    [ "dfsch_cmdopts_make_parser", "cmdopts_8h.html#a11a907820c1adf57070e136cb9edee8f", null ],
+    [ "dfsch_cmdopts_parse", "cmdopts_8h.html#a07857932811016a43d6ccbfbd84d9146", null ],
+    [ "dfsch_cmdopts_parse_argv", "cmdopts_8h.html#a52206f341de682a2c3b58a110d24d220", null ],
+    [ "dfsch_cmdopts_parse_list", "cmdopts_8h.html#a6cc0036e25b6d9eaac4a774181e1cd28", null ],
+    [ "dfsch_cmdopts_error_type", "cmdopts_8h.html#af2dc0c96c1ed7053317e80a5db6cc0f5", null ],
+    [ "dfsch_cmdopts_parser_type", "cmdopts_8h.html#ae49f96b6badfa860c378276e37f3109a", null ]
+];

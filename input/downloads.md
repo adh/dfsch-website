@@ -2,7 +2,7 @@
 
 [All downloads...](files.html)
 
-# Current version - [0.4.0-rc1](files/dfsch-0.4.0-rc1.tar.gz)
+# Current version - [0.4.0-rc2](files/dfsch-0.4.0-rc2.tar.gz)
 
  * Common Lisp style argument destructuring
  * Generic functions with multiple-dispatch

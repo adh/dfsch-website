@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$structdfsch____handler__list__t.html" title="{dfsch__handler_list_t\n|+ handler\l+ next\l+ type\l|}" alt="" coords="529,1168,673,1288"/>
+<area shape="rect" id="node5" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="716,5,823,91"/>
+<area shape="rect" id="node7" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ collection\l+ describe\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ iterator\l+ mapping\l+ name\land 8 more...|}" alt="" coords="1043,723,1160,981"/>
+<area shape="rect" id="node10" href="$structdfsch__sequence__methods__t.html" title="{dfsch_sequence_methods_t\n|+ length\l+ ref\l+ set\l|}" alt="" coords="1285,296,1469,416"/>
+<area shape="rect" id="node13" href="$structdfsch__mapping__methods__t.html" title="{dfsch_mapping_methods_t\n|+ get_keys_iterator\l+ get_values_iterator\l+ ref\l+ set\l+ set_if_exists\l+ set_if_not_exists\l+ unset\l|}" alt="" coords="475,261,653,451"/>
+<area shape="rect" id="node16" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ options\l+ slot_data\l+ type\l|}" alt="" coords="1369,1424,1487,1613"/>
+<area shape="rect" id="node19" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ alignment\l+ instance_init\l+ ref\l+ set\l+ size\l+ standard_type\l+ type_init\l|}" alt="" coords="1365,1133,1491,1323"/>
+<area shape="rect" id="node23" href="$structdfsch__collection__methods__t.html" title="{dfsch_collection_methods_t\n|+ get_iterator\l+ make_constructor\l|}" alt="" coords="677,305,861,407"/>
+<area shape="rect" id="node27" href="$structdfsch__iterator__methods__t.html" title="{dfsch_iterator_methods_t\n|+ next\l+ this\l|}" alt="" coords="885,305,1053,407"/>
+<area shape="rect" id="node32" href="$structdfsch____catch__list__t.html" title="{dfsch__catch_list_t\n|+ next\l+ tag\l|}" alt="" coords="101,535,235,638"/>
+<area shape="rect" id="node36" href="$structdfsch____restart__list__t.html" title="{dfsch__restart_list_t\n|+ next\l+ restart\l|}" alt="" coords="236,1006,375,1109"/>
+<area shape="rect" id="node40" href="$structdfsch____stack__trace__frame__t.html" title="{dfsch__stack_trace_frame_t\n|+ apply\l+ args\l+ data\l+ env\l+ eval\l+ expr\l+ flags\l+ next\l+ proc\l|}" alt="" coords="440,475,627,699"/>
+</map>

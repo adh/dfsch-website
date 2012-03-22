@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$parse_8h.html" title="dfsch/parse.h" alt="" coords="92,83,193,112"/>
+<area shape="rect" id="node9" href="$process_8h.html" title="dfsch/lib/process.h" alt="" coords="217,83,348,112"/>
+<area shape="rect" id="node11" href="$socket-port_8h.html" title="dfsch/lib/socket&#45;port.h" alt="" coords="372,83,521,112"/>
+<area shape="rect" id="node13" href="$tcp-port_8h.html" title="dfsch/lib/tcp&#45;port.h" alt="" coords="545,83,676,112"/>
+<area shape="rect" id="node15" href="$zlib_8h.html" title="dfsch/lib/zlib.h" alt="" coords="700,83,807,112"/>
+<area shape="rect" id="node5" href="$console_8h.html" title="dfsch/lib/console.h" alt="" coords="5,160,136,189"/>
+<area shape="rect" id="node7" href="$json_8h.html" title="dfsch/lib/json.h" alt="" coords="160,160,269,189"/>
+</map>

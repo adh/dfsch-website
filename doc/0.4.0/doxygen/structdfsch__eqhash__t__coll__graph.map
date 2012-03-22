@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$uniondfsch____eqhash__contents__t.html" title="{dfsch__eqhash_contents_t\n|+ large\l+ small\l|}" alt="" coords="28,1003,207,1106"/>
+<area shape="rect" id="node4" href="$structdfsch____eqhash__small__t.html" title="{dfsch__eqhash_small_t\n|+ flags\l+ keys\l+ values\l|}" alt="" coords="5,475,163,595"/>
+<area shape="rect" id="node6" href="$structdfsch__object__t.html" title="{dfsch_object_t\n|+ type\l|}" alt="" coords="551,5,657,91"/>
+<area shape="rect" id="node8" href="$structdfsch__type__t.html" title="{dfsch_type_t\n|+ apply\l+ collection\l+ describe\l+ documentation\l+ equal_p\l+ flags\l+ hash\l+ iterator\l+ mapping\l+ name\land 8 more...|}" alt="" coords="772,619,889,877"/>
+<area shape="rect" id="node11" href="$structdfsch__sequence__methods__t.html" title="{dfsch_sequence_methods_t\n|+ length\l+ ref\l+ set\l|}" alt="" coords="611,296,795,416"/>
+<area shape="rect" id="node14" href="$structdfsch__mapping__methods__t.html" title="{dfsch_mapping_methods_t\n|+ get_keys_iterator\l+ get_values_iterator\l+ ref\l+ set\l+ set_if_exists\l+ set_if_not_exists\l+ unset\l|}" alt="" coords="819,261,997,451"/>
+<area shape="rect" id="node17" href="$structdfsch__slot__t.html" title="{dfsch_slot_t\n|+ access\l+ documentation\l+ name\l+ offset\l+ options\l+ slot_data\l+ type\l|}" alt="" coords="741,1216,859,1405"/>
+<area shape="rect" id="node20" href="$structdfsch__slot__type__t.html" title="{dfsch_slot_type_t\n|+ alignment\l+ instance_init\l+ ref\l+ set\l+ size\l+ standard_type\l+ type_init\l|}" alt="" coords="857,960,983,1149"/>
+<area shape="rect" id="node24" href="$structdfsch__collection__methods__t.html" title="{dfsch_collection_methods_t\n|+ get_iterator\l+ make_constructor\l|}" alt="" coords="1021,305,1205,407"/>
+<area shape="rect" id="node28" href="$structdfsch__iterator__methods__t.html" title="{dfsch_iterator_methods_t\n|+ next\l+ this\l|}" alt="" coords="1229,305,1397,407"/>
+<area shape="rect" id="node33" href="$structdfsch__eqhash__entry__t.html" title="{dfsch_eqhash_entry_t\n|+ flags\l+ key\l+ next\l+ value\l|}" alt="" coords="125,287,275,425"/>
+<area shape="rect" id="node31" href="$structdfsch____eqhash__large__t.html" title="{dfsch__eqhash_large_t\n|+ cache\l+ count\l+ mask\l+ vector\l|}" alt="" coords="132,679,287,817"/>
+</map>
