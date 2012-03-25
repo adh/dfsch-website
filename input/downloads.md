@@ -4,7 +4,7 @@
 
 # Current version - [0.4.0-rc2](files/dfsch-0.4.0-rc2.tar.gz)
 
-[Windows binary installer](files/dfsch-0.4.0-rc2-minimal.exe) [Zipped binary installation](files/dfsch-0.4.0-rc2-minimal.exe)
+Precompiled Windows binary: [installer](files/dfsch-0.4.0-rc2-minimal.exe) [zip file](files/dfsch-0.4.0-rc2-minimal.zip)
 
 
  * Common Lisp style argument destructuring
