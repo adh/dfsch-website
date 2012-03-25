@@ -4,6 +4,9 @@
 
 # Current version - [0.4.0-rc2](files/dfsch-0.4.0-rc2.tar.gz)
 
+[Windows binary installer](files/dfsch-0.4.0-rc2-minimal.exe) [Zipped binary installation](files/dfsch-0.4.0-rc2-minimal.exe)
+
+
  * Common Lisp style argument destructuring
  * Generic functions with multiple-dispatch
  * Symbol packages
