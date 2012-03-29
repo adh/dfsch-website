@@ -70,7 +70,7 @@
                         (:a :href "http://twitter.github.com/bootstrap/"
                             "Bootstrap from Twitter")))))))
 
-(define *menu* '(;("./features.html" "Features")
+(define *menu* '(("./features.html" "Features")
                  ("./downloads.html" "Downloads")
                  ("./documentation.html" "Documentation")
                  ("http://github.com/adh/dfsch" "Github")))
