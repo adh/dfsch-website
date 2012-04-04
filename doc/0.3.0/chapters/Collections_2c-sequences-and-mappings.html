@@ -1,0 +1,135 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Collections, sequences and mappings - Default dfsch top-level environment</title><style>
+.menu-bar {
+  display: block; 
+  background-color: #abcdef; 
+  border-width: 1px; 
+  border-color: black; 
+  border-style: solid;
+  padding-left: 1em
+}
+.menu-bar li {
+  display: inline; 
+  margin-left: 0.5em; 
+  margin-right: 0.5em
+}
+
+.pkg-menu {
+  display: block;
+  float: right;
+}
+.pkg-label {
+  display: none;
+}
+.char-bar {
+  display: block; 
+  border-width: 1px; 
+  border-color: #abcdef; 
+  border-style: solid;
+  padding-left: 0.2em
+}
+.char-bar li {
+  display: inline; 
+  margin-left: 0.3em; 
+  margin-right: 0.3em
+}
+
+.chapter-list {
+  margin-top: 0em;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+  background-color: #cdabef;
+  border-width: 1px; 
+  border-color: black; 
+  border-style: solid;
+  float: right;
+}
+
+pre {
+  border-color: #abcdef;
+  border-style: dashed;
+  border-width: 1px;
+  border-left-style: solid;
+  border-left-width: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+</style><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26428838-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head><body><h1>Collections, sequences and mappings</h1><ul class="menu-bar"><li><a href="../index.html">All</a></li><li><a href="../hierarchy.html">Type hierarchy</a></li><li><a href="../categories/Functions.html">Functions</a></li><li><a href="../categories/Generic-functions.html">Generic functions</a></li><li><a href="../categories/Macros.html">Macros</a></li><li><a href="../categories/Special-forms.html">Special forms</a></li><li><a href="../categories/Type-specializers.html">Type specializers</a></li><li><a href="../categories/Types.html">Types</a></li><li><a href="../categories/uncategorized.html">uncategorized</a></li><li><strong class="pkg-label">Packages:</strong><ul class="pkg-menu"><li class="pkg-nav"><a href="../packages/dfsch.html">dfsch</a></li><li class="pkg-nav"><a href="../packages/dfsch_25implementation.html">dfsch%implementation</a></li><li class="pkg-nav"><a href="../packages/dfsch_25internal.html">dfsch%internal</a></li></ul></li></ul><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2113968397491090";
+/* dfsch-doc-top */
+google_ad_slot = "5033569669";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><ul class="chapter-list"><li><a href="./Syntax.html">Syntax</a></li><li><a href="./Program-structure.html">Program structure</a></li><li><strong>Collections, sequences and mappings</strong></li><li><a href="./Strings.html">Strings</a></li><li><a href="./Numbers.html">Numbers</a></li><li><a href="./Input-and-output.html">Input and output</a></li><li><a href="./Types-and-object-orientation.html">Types and object orientation</a></li></ul><p>dfsch provides abstraction for common collection types. Collections of
+objects (accessible only for iteration), ordered sequences and
+mappings (called dictionaries or hashes in other languages). These
+data types are accessed by common set of functions regardless of their
+real underlying implementation.</p>
+
+<h2>Collections</h2>
+
+<p>Collection is abstraction for object that can be iterated over. All
+objects implementing <!DOCTYPE html><a href="../entries/_3c_3ccollection_3e_3e.html">&lt;&lt;collection&gt;&gt;</a> can be passed to function
+<!DOCTYPE html><a href="../entries/collection-iterator.html">collection-iterator</a> which returns iterator that in some sense
+iterates over contents of given collection.</p>
+
+<p>Interface of iterators is designed to be partialy compatible with
+ordinary Lisp lists - that is, lists can be directly used as
+iterators. However, steping iterator to next element may modify
+iterator itself. Function <!DOCTYPE html><a href="../entries/iter-this.html">iter-this</a> returns object that iterator
+points to (and is thus equivalent to <!DOCTYPE html><a href="../entries/car.html">car</a>), on the other hand
+<!DOCTYPE html><a href="../entries/iter-next_21.html">iter-next!</a> returns iterator pointing to next element or empty list,
+when no more elements are avaiable. Reusing argument to <!DOCTYPE html><a href="../entries/iter-next_21.html">iter-next!</a>
+in any way produces unpredictable results (except when <!DOCTYPE html><a href="../entries/iter-next_21.html">iter-next!</a>
+returns it's argument).</p>
+
+<p>Function <!DOCTYPE html><a href="../entries/coerce-collection.html">coerce-collection</a> returns collection of given type with
+same contents as collection that it's its first argument. Functions
+<!DOCTYPE html><a href="../entries/collection-_3elist.html">collection-&gt;list</a> and <!DOCTYPE html><a href="../entries/collection-_3ereversed-list.html">collection-&gt;reversed-list</a> convert collections
+to lists, with second one being slightly faster.</p>
+
+<h2>Sequences</h2>
+
+<p>Objects implementing indexed collections of other object are so called
+sequence objects and implement <!DOCTYPE html><a href="../entries/_3c_3csequence_3e_3e.html">&lt;&lt;sequence&gt;&gt;</a>. These objects can be
+accessed by functions <!DOCTYPE html><a href="../entries/seq-ref.html">seq-ref</a> and <!DOCTYPE html><a href="../entries/seq-set_21.html">seq-set!</a>. It's apparent, that
+most sequences are also collections.</p>
+
+<h2>Mappings</h2>
+
+<p>Mappings support accessor <!DOCTYPE html><a href="../entries/map-ref.html">map-ref</a> and setters <!DOCTYPE html><a href="../entries/map-set_21.html">map-set!</a> and
+<!DOCTYPE html><a href="../entries/map-unset_21.html">map-unset!</a>. In addition to this, mappings also provide
+conditionalized setters <!DOCTYPE html><a href="../entries/map-set-if-exists_21.html">map-set-if-exists!</a> and
+<!DOCTYPE html><a href="../entries/map-set-if-not-exists_21.html">map-set-if-not-exists!</a>. Most mappings can be iterated over like
+<!DOCTYPE html><a href="../entries/_3c_3ccollection_3e_3e.html">&lt;&lt;collection&gt;&gt;</a>, elements returned by iterator are intended to be
+lists of key and value although some mapping types return only
+keys. Keys and values separately can be iterated over by iterators
+returned from <!DOCTYPE html><a href="../entries/map-keys.html">map-keys</a> and <!DOCTYPE html><a href="../entries/map-values.html">map-values</a>.</p>
+<center><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2113968397491090";
+/* dfsch-doc-foot */
+google_ad_slot = "4983934384";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center><hr><p><address>Generated by docgen.scm running on dfsch 0.4.0-rc2 (rel-0.3.0-1334-ge2409e4) on 2012-03-18 23:11:46</address></p></body></html>

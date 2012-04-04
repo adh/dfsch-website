@@ -2,9 +2,9 @@
 
 [All downloads...](files.html)
 
-# Current version - [0.4.0-rc2](files/dfsch-0.4.0-rc2.tar.gz)
+# Current version - [0.4.0-rc3](files/dfsch-0.4.0-rc3.tar.gz)
 
-Precompiled Windows builds: [installer](files/dfsch-0.4.0-rc2.exe) [zip file](files/dfsch-0.4.0-rc2.zip) [zip file without Tcl/Tk](files/dfsch-0.4.0-rc2-minimal.zip)
+Precompiled Windows builds: [installer](files/dfsch-0.4.0-rc3.exe) [zip file](files/dfsch-0.4.0-rc3.zip)
 
 
  * Common Lisp style argument destructuring
