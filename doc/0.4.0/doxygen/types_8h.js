@@ -57,6 +57,7 @@ var types_8h =
     [ "DFSCH_INSTANCE_P", "types_8h.html#a431cd198807ab14cc691b9e1f8600422", null ],
     [ "DFSCH_INT_SLOT", "types_8h.html#acd3ba413e329d11dd79172b06b7f7406", null ],
     [ "DFSCH_INT_SLOT_TYPE", "types_8h.html#ac65b3b3dcf368c6db80bb7e95f35d561", null ],
+    [ "DFSCH_INTERNED_SYMBOL_P", "types_8h.html#a0cec9c43cba58c2420a5bed3526bbaf6", null ],
     [ "DFSCH_INVALID_OBJECT", "types_8h.html#aeb709d9887860cbd23490e6d0879fdf3", null ],
     [ "DFSCH_INVALID_OBJECT_TYPE", "types_8h.html#adb1473d2f08a7fb238f0e26fb0662ca1", null ],
     [ "DFSCH_ITERATOR_P", "types_8h.html#aa92610ba085f31452cc210b3c35e0d35", null ],

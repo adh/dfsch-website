@@ -179,6 +179,7 @@ var dfsch_8h =
     [ "dfsch_make_slot_writer", "dfsch_8h.html#a0b9240a09c639aad5a2bd133b36abada", null ],
     [ "dfsch_make_symbol", "dfsch_8h.html#af089f50dde23f0a132670368a9e341d5", null ],
     [ "dfsch_make_top_level_environment", "dfsch_8h.html#a93162c642f485575064e933e9987fbde", null ],
+    [ "dfsch_make_uninterned_symbol", "dfsch_8h.html#a9172da47430ffa4bac1cc71dca236946", null ],
     [ "dfsch_make_vector", "dfsch_8h.html#a9faa1445e2316a3fd5609318422b3729", null ],
     [ "dfsch_mapping_get_keys_iterator", "dfsch_8h.html#a126b4c14fddd1e5fe6f30f5a76f4a4b8", null ],
     [ "dfsch_mapping_get_values_iterator", "dfsch_8h.html#a972883e42f12a55d6ee4ba9a70a0705b", null ],

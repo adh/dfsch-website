@@ -6,6 +6,7 @@ var writer_8h =
     [ "DFSCH_WRITE_CIRCULAR", "writer_8h.html#a38d3cb14ed8e67fb89e91ea7227740cb", null ],
     [ "dfsch_invalidate_writer_state", "writer_8h.html#af7fcd65dec6cac7de5d05ec69daf7411", null ],
     [ "dfsch_make_writer_state", "writer_8h.html#aa281adf202eeb5184b9b51a4eba6e4a9", null ],
+    [ "dfsch_put_object", "writer_8h.html#a0aebdde2188eb97837d767a4fde21459", null ],
     [ "dfsch_write_object", "writer_8h.html#a3be6837800ae6f88ea035dc892a2ae88", null ],
     [ "dfsch_write_pprint_begin", "writer_8h.html#abdf49c119e88d9af013c9b9932eda0eb", null ],
     [ "dfsch_write_pprint_end", "writer_8h.html#ae5b3f8617edfb253e244096a2e16062a", null ],

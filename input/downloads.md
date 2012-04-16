@@ -2,9 +2,9 @@
 
 [All downloads...](files.html)
 
-# Current version - [0.4.0-rc3](files/dfsch-0.4.0-rc3.tar.gz)
+# Current version - [0.4.0](files/dfsch-0.4.0.tar.gz)
 
-Precompiled Windows builds: [installer](files/dfsch-0.4.0-rc3.exe) [zip file](files/dfsch-0.4.0-rc3.zip)
+Precompiled Windows builds: [installer](files/dfsch-0.4.0.exe), [zip file](files/dfsch-0.4.0.zip)
 
 
  * Common Lisp style argument destructuring
@@ -22,11 +22,12 @@ Precompiled Windows builds: [installer](files/dfsch-0.4.0-rc3.exe) [zip file](fi
  * Socket support
  * Cryptographic module
  * Tcl/Tk GUI module
- * HTTP low-level processing module and HTTP server
+ * HTTP message handling and HTTP server
  * SQL support (sqlite2, sqlite3)
  * FFI
  * libGD
  * libupskirt based markdown parser
+ * Zlib, ZIP and MiniLZ
 
 # Previous versions:
 
