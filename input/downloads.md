@@ -2,10 +2,11 @@
 
 [All downloads...](files.html)
 
+[Requirements of dfsch](requirements.html)
+
 # Current version - [0.4.0](files/dfsch-0.4.0.tar.gz)
 
 Precompiled Windows builds: [installer](files/dfsch-0.4.0.exe), [zip file](files/dfsch-0.4.0.zip)
-
 
  * Common Lisp style argument destructuring
  * Generic functions with multiple-dispatch
